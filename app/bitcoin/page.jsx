@@ -2,11 +2,13 @@ import Link from "next/link";
 import React from "react";
 import Team from "@/components/Team";
 import Trending from "@/components/Trending";
+import Tokenomics from "@/components/Tokenomics";
 const Bitcoin = () => {
   return (
     <section className="px-5 mt-4">
       <section className="flex gap-4">
         <div className="basis-3/4">
+          <Tokenomics />
           <Team />
         </div>
         <div className="basis-1/4">
@@ -26,7 +28,7 @@ const Bitcoin = () => {
               Get Started for FREE
             </Link>
           </div>
-        <Trending/>
+          <Trending />
         </div>
       </section>
       <section></section>

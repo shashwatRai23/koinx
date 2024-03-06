@@ -2,9 +2,9 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div className="bg-[#ffffff] px-4 py-4 rounded-lg">
-      <h2 className="text-xl font-bold">Team</h2>
-      <p className="mt-2 text-[#3E424A]">
+    <div className="card mt-3">
+      <h2 className="heading_text">Team</h2>
+      <p className="mt-4 mb-3 text-[#3E424A]">
         Lorem ipsum dolor sit amet consectetur. Id consequat adipiscing arcu
         nibh. Eget mattis in mi integer sit egestas. Proin tempor id pretium
         quam. Facilisis purus convallis quam augue.

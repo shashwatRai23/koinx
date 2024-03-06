@@ -12,3 +12,11 @@ body{
   color: white;
   padding: 8px 10px;
 }
+
+.card{
+  @apply bg-[#ffffff] px-4 pt-6 pb-[4em] rounded-lg
+}
+
+.heading_text{
+  @apply text-xl font-bold
+}

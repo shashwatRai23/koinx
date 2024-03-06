@@ -19,8 +19,8 @@ const Trending = () => {
   }, []);
   console.log(trendingCryptoData);
   return (
-    <div className="py-5 px-3 bg-[#fff] mt-5 rounded-md">
-      <h1 className="text-xl font-bold">Trending Coins</h1>
+    <div className="bg-[#fff] rounded-md px-3 py-3 mt-3 h-fit">
+      <h1 className="heading_text">Trending Coins</h1>
       <div className="mt-5">
         {trendingCryptoData.map((crypto) => (
           <div
@@ -33,8 +33,8 @@ const Trending = () => {
                 alt=""
                 className="rounded-full w-[25px]"
               />
-              <p className="font-bold text-sm">{crypto.item.name}</p>
-              <p className="font-bold text-sm">{`(${crypto.item.symbol})`}</p>
+              <p className="font-semibold text-sm">{crypto.item.name}</p>
+              <p className="font-semibold text-sm">{`(${crypto.item.symbol})`}</p>
             </div>
             <p
               className={`rounded p-1 text-sm w-fit h-fit ${
