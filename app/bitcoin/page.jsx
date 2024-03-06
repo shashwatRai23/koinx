@@ -10,7 +10,7 @@ const Bitcoin = () => {
         </div>
         <div className="h-fit basis-1/4 bg-[#0052FE] text-center text-white flex flex-col items-center px-6 gap-6 py-6 rounded-lg">
           <h2 className="font-bold text-xl">Get Started with KoinX for FREE</h2>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center font-[#F2F2F2]">
             With our range of features that you can equip for free, KoinX allows
             you to be more educated and aware of your tax reports.
           </p>

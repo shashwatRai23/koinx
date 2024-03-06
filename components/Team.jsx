@@ -11,7 +11,7 @@ const Team = () => {
       </p>
       <div className="flex flex-col gap-3">
         <div className="flex mt-5 gap-5 bg-[#E8F4FD] px-5 py-3 rounded-md items-center">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col">
             <img src="/assets/t1.svg" className="rounded-md" />
             <h4 className="font-bold">John Smith</h4>
             <small className="text-[#788F9B]">Designation here</small>
