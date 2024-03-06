@@ -15,7 +15,7 @@ function Chart() {
       script.innerHTML = `
         {
           "width": "100%",
-          "height": "40%",
+          "height": "100%",
           "symbol": "BITSTAMP:BTCUSD",
           "interval": "D",
           "timezone": "Etc/UTC",
@@ -36,7 +36,7 @@ function Chart() {
     <div
       className="tradingview-widget-container"
       ref={container}
-      //   style={{ height: "100%", width: "100%" }}
+        style={{ height: "100%", width: "100%" }}
     >
       <div
         className="tradingview-widget-container__widget"
