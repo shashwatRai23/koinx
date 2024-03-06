@@ -3,11 +3,13 @@ import React from "react";
 import Team from "@/components/Team";
 import Trending from "@/components/Trending";
 import Tokenomics from "@/components/Tokenomics";
+import Chart from "@/components/Chart";
 const Bitcoin = () => {
   return (
     <section className="px-5 mt-4">
       <section className="flex gap-4">
         <div className="basis-3/4">
+          <Chart />
           <Tokenomics />
           <Team />
         </div>
