@@ -19,7 +19,7 @@ export default function Footer() {
   }, []); 
 
   return (
-    <div className="p-10 bg-[#fff] mt-10">
+    <div className="p-12 bg-[#fff] mt-10">
       <h1 className="text-2xl font-semibold my-4">You May Also Like</h1>
       <Carousel id={1} cryptoData={trendingCryptoData}></Carousel>
       <h1 className="text-2xl font-semibold my-4">Trending Coins</h1>

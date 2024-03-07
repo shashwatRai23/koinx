@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import Chart from "./Chart";
 import axios from "axios";
+import { IoMdArrowDropup } from "react-icons/io";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Coin = () => {
   const [coinData, setCoinData] = useState(null);
@@ -53,9 +55,9 @@ const Coin = () => {
                 <div className="text-2xl font-bold">$ {price.bitcoin.usd}</div>
                 <div className="text-sm mt-1">₹ {price.bitcoin.inr}</div>
               </div>
-              <div className="ml-10">
-                <span
-                  className={`rounded p-1 text-sm ${
+              <div className="ml-10 flex">
+                <p
+                  className={`rounded p-1 flex items-center text-sm w-[70px] h-fit ${
                     parseFloat(
                       coinData.market_data.price_change_percentage_24h
                     ) < 0
@@ -63,8 +65,15 @@ const Coin = () => {
                       : "bg-green-100 text-green-400"
                   }`}
                 >
-                  {coinData.market_data.price_change_percentage_24h} %
-                </span>
+                  {parseFloat(
+                    coinData.market_data.price_change_percentage_24h
+                  ) < 0 ? (
+                    <IoMdArrowDropdown />
+                  ) : (
+                    <IoMdArrowDropup />
+                  )}
+                  {Math.abs(coinData.market_data.price_change_percentage_24h)}
+                </p>
                 <span className="ml-2 text-[#768396]">(24 H)</span>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 const Nav = () => {
   return (
-    <nav className='flex justify-between bg-white px-5 py-3 items-center'>
+    <nav className='flex flex-col sm:flex-row justify-between bg-white px-5 py-3 items-center'>
         <Link href={"/"}>
             <img src="/assets/logo.svg" alt="logo"/>
         </Link>

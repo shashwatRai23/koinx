@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup } from "react-icons/io";
 import axios from "axios";
 const Trending = () => {
   const [trendingCryptoData, setTrendingCryptoData] = useState([]);
@@ -25,7 +27,7 @@ const Trending = () => {
         {trendingCryptoData.map((crypto) => (
           <div
             key={crypto.item}
-            className="flex justify-between items-center mt-2"
+            className="flex justify-between items-center mt-3"
           >
             <div className="flex items-center gap-1">
               <img
@@ -33,19 +35,25 @@ const Trending = () => {
                 alt=""
                 className="rounded-full w-[25px]"
               />
-              <p className="font-semibold text-sm">{crypto.item.name}</p>
-              <p className="font-semibold text-sm">{`(${crypto.item.symbol})`}</p>
+              <p className="font ">{crypto.item.name}</p>
+              <p className="font ">{`(${crypto.item.symbol})`}</p>
             </div>
             <p
-              className={`rounded p-1 text-sm w-fit h-fit ${
+              className={`rounded p-1 flex items-center text-sm w-[70px] h-fit ${
                 parseFloat(crypto.item.data.price_change_percentage_24h.usd) < 0
                   ? "bg-red-100 text-red-400"
                   : "bg-green-100 text-green-400"
               }`}
             >
-              {parseFloat(
+              {parseFloat(crypto.item.data.price_change_percentage_24h.usd) <
+              0 ? (
+                <IoMdArrowDropdown />
+              ) : (
+                <IoMdArrowDropup />
+              )}
+              {Math.abs(parseFloat(
                 crypto.item.data.price_change_percentage_24h.usd
-              ).toFixed(2)}
+              ).toFixed(2))}
               %
             </p>
           </div>

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="card mt-3">
       <h1 className="heading_text">About Bitcoin</h1>
-      <div className="flex flex-col gap-2 mt-3 border-b-2 border-[[#3E424A]] pb-3">
+      <div className="flex flex-col gap-2 mt-3 border-b-2 border-[#C9CFDD99] pb-3">
         <h2 className="text-lg font-bold">What is Bitcoin ?</h2>
         <p className="text-[#3E424A]">
           Bitcoin’s price today is US$16,951.82, with a 24-hour trading volume
@@ -15,7 +15,7 @@ const About = () => {
           19.24 M BTC and a max supply of 21 M BTC.
         </p>
       </div>
-      <div className="flex flex-col gap-2 mt-3 border-b-2 border-[[#3E424A]] pb-3">
+      <div className="flex flex-col gap-2 mt-3 border-b-2 border-[#C9CFDD99] pb-3">
         <h2 className="text-lg font-bold">Lorem ipsum dolor sit amet</h2>
         <p className="text-[#3E424A]">
           Lorem ipsum dolor sit amet consectetur. Aliquam placerat sit lobortis
@@ -33,7 +33,7 @@ const About = () => {
         </p>
       </div>
       <h1 className="heading_text mt-3">Already Holding Bitcoin ?</h1>
-      <div className="flex gap-5 mt-6 border-b-2 border-[[#3E424A]] pb-3">
+      <div className="flex flex-col sm:flex-row gap-5 mt-6 border-b-2 border-[#C9CFDD99] pb-3">
         <div className="basis-1/2 flex bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg p-3 gap-3">
             <img src="/assets/ab1.svg"/>
             <div className="flex flex-col justify-between">

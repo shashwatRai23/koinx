@@ -10,8 +10,8 @@ import About from "@/components/About";
 
 const Bitcoin = () => {
   return (
-    <section className="px-5 mt-4">
-      <section className="flex gap-4">
+    <section className="px-3 mt-4 sm:px-5">
+      <section className="flex flex-col sm:flex-row gap-4">
         <div className="basis-3/4">
           <Coin />
           <Performance/>

@@ -29,7 +29,7 @@ const Performance = () => {
         <h2 className="sub_heading_text"><span>Fundamentals</span> <span className="text-[#ABB9BF]"><IoIosInformationCircle /></span></h2>
         {
           coinData && 
-          (<div className="flex gap-10 mt-3">
+          (<div className="flex flex-col sm:flex-row gap-10 mt-3">
           <div className="basis-1/2 flex flex-col gap-2 justify-between w-full">
             <PerfComp map="Bitcoin Price" value={`$${coinData.market_data.current_price.usd}`}/>
             <PerfComp map="24h Low/ 24h High" value={`$${coinData.market_data.low_24h.usd} / $${coinData.market_data.high_24h.usd}`}/>

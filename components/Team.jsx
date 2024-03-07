@@ -1,5 +1,5 @@
 import React from "react";
-
+import TeamMember from "@/utils/TeamMember";
 const Team = () => {
   return (
     <div className="card mt-3">
@@ -10,51 +10,9 @@ const Team = () => {
         quam. Facilisis purus convallis quam augue.
       </p>
       <div className="flex flex-col gap-3">
-        <div className="flex mt-5 gap-5 bg-[#E8F4FD] px-5 py-3 rounded-md items-center">
-          <div className="flex flex-col">
-            <img src="/assets/t1.svg" className="rounded-md" />
-            <h4 className="font-bold">John Smith</h4>
-            <small className="text-[#788F9B]">Designation here</small>
-          </div>
-          <div className="text-[#0F1629]">
-            Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit
-            fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis
-            in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet
-            nec neque sed pellentesque viverra. Consectetur proin amet ut id
-            facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu
-            egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu
-          </div>
-        </div>
-        <div className="flex mt-5 gap-5 bg-[#E8F4FD] px-5 py-3 rounded-md items-center">
-          <div className="flex flex-col items-center">
-            <img src="/assets/t2.svg" className="rounded-md" />
-            <h4 className="font-bold">Ellina Williams</h4>
-            <small className="text-[#788F9B]">Designation here</small>
-          </div>
-          <div className="text-[#0F1629]">
-            Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit
-            fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis
-            in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet
-            nec neque sed pellentesque viverra. Consectetur proin amet ut id
-            facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu
-            egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu
-          </div>
-        </div>
-        <div className="flex mt-5 gap-5 bg-[#E8F4FD] px-5 py-3 rounded-md items-center">
-          <div className="flex flex-col items-center ">
-            <img src="/assets/t3.svg" className="rounded-md" />
-            <h4 className="font-bold">John Smith</h4>
-            <small className="text-[#788F9B]">Designation here</small>
-          </div>
-          <div className="text-[#0F1629]">
-            Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit
-            fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis
-            in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet
-            nec neque sed pellentesque viverra. Consectetur proin amet ut id
-            facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu
-            egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu
-          </div>
-        </div>
+        <TeamMember name="John Smith" imgsrc="/assets/t1.svg"/>
+        <TeamMember name="Ella Willams" imgsrc="/assets/t2.svg"/>
+        <TeamMember name="John Smith" imgsrc="/assets/t3.svg"/>
       </div>
     </div>
   );

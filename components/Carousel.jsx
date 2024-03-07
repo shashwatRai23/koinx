@@ -20,7 +20,7 @@ const Carousel = ({ cryptoData,id}) => {
       <MdChevronLeft
         onClick={slideLeft}
         size={40}
-        className="absolute left-1 top-1/2 transform -translate-y-1/2 cursor-pointer rounded-full border border-gray-200 p-1 bg-white"
+        className="absolute -left-5 top-1/2 transform -translate-y-1/2 cursor-pointer rounded-full border border-gray-300 p-1 bg-white"
       />
       <div
         id={`slider${id}`}
@@ -33,7 +33,7 @@ const Carousel = ({ cryptoData,id}) => {
       <MdChevronRight
         onClick={slideRight}
         size={40}
-        className="absolute right-1 top-1/2 transform -translate-y-1/2 cursor-pointer rounded-full border border-gray-200 p-1 bg-white"
+        className="absolute -right-5 top-1/2 transform -translate-y-1/2 cursor-pointer rounded-full border border-gray-300 p-1 bg-white"
       />
     </div>
   );

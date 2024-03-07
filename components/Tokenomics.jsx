@@ -6,7 +6,7 @@ const Tokenomics = () => {
       <h1 className="heading_text">Tokenomics</h1>
       <div className="mt-2">
         <h2 className="text-lg font-semibold">Initial Distribution</h2>
-        <div className="my-3 flex items-center gap-8">
+        <div className="my-3 flex flex-col sm:flex-row items-center gap-8">
           <img src="/assets/tokenomics.svg" alt="distribution"/>
           <div>
             <div className="flex items-center gap-2 ">
