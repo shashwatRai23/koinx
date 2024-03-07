@@ -13,18 +13,18 @@ const Sentiment = () => {
           <IoIosInformationCircle />
         </span>
       </h2>
-      <div className="flex flex-col sm:flex-row gap-4 mt-2">
-      {eventsData.map((event) => (
+      <div className="flex flex-col sm:flex-row gap-4 mt-4">
+        {eventsData.map((data) => (
           <EventsCard
-            key={event.id}
-            title={event.title}
-            content={event.content}
-            imgsrc={event.img}
+            key={data.id}
+            title={data.title}
+            content={data.content}
+            imgsrc={data.img}
           />
         ))}
-        {/* <EventCarousel eventsData={eventsData} /> */}
       </div>
-      <h2 className="sub_heading_text mt-4">
+      {/* <EventCarousel eventsData={eventsData} /> */}
+      <h2 className="sub_heading_text">
         <span>Analyst Estimates</span>{" "}
         <span className="text-[#ABB9BF]">
           <IoIosInformationCircle />

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import EventsCard from "./EventsCard";
@@ -14,7 +15,7 @@ const EventCarousel = ({eventsData}) => {
   };
 
   return (
-    <div className="my-2 relative">
+    <div className="my-2 relative max-w-[400px]">
       <MdChevronLeft
         onClick={slideLeft}
         size={40}
@@ -22,7 +23,7 @@ const EventCarousel = ({eventsData}) => {
       />
       <div
         id="sliderEvent"
-        className="flex gap-2 w-full overflow-x-hidden scroll whitespace-nowrap scroll-smooth"
+        className="flex gap-2 w-fit overflow-x-hidden scroll whitespace-nowrap scroll-smooth"
       >
         {eventsData.map((data) => (
           <EventsCard

@@ -8,10 +8,15 @@ import Performance from "@/components/Performance";
 import Sentiment from "@/components/Sentiment";
 import About from "@/components/About";
 import SubNav from "@/components/SubNav";
+import Footer from "@/components/Footer";
 
 const Bitcoin = () => {
   return (
     <section className="px-3 mt-4 sm:px-5">
+      <section className="flex gap-2 my-2">
+        <Link href="/" className="text-[#3E5765]">Cryptocurrencies {" >> "}</Link>
+        <Link href="/bitcoin" className="font-bold">Bitcoin</Link>
+      </section>
       <section className="flex flex-col sm:flex-row gap-4">
         <div className="basis-3/4">
           <Coin />
@@ -35,7 +40,7 @@ const Bitcoin = () => {
             <Link
               href={"/getstarted"}
               className="bg-[#ffffff] px-6 py-2 text-black rounded-md"
-            >
+              >
               Get Started for FREE
             </Link>
           </div>
@@ -43,6 +48,7 @@ const Bitcoin = () => {
         </div>
       </section>
       <section></section>
+      <Footer/>
     </section>
   );
 };
