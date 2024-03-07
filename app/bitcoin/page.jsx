@@ -6,6 +6,7 @@ import Tokenomics from "@/components/Tokenomics";
 import Coin from "@/components/Coin";
 import Performance from "@/components/Performance";
 import Sentiment from "@/components/Sentiment";
+import About from "@/components/About";
 
 const Bitcoin = () => {
   return (
@@ -15,6 +16,7 @@ const Bitcoin = () => {
           <Coin />
           <Performance/>
           <Sentiment/>
+          <About/>
           <Tokenomics />
           <Team />
         </div>
