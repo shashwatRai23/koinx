@@ -15,7 +15,7 @@ const EventCarousel = ({eventsData}) => {
   };
 
   return (
-    <div className="my-2 relative max-w-[400px]">
+    <div className="my-2 w-full relative">
       <MdChevronLeft
         onClick={slideLeft}
         size={40}
@@ -23,7 +23,7 @@ const EventCarousel = ({eventsData}) => {
       />
       <div
         id="sliderEvent"
-        className="flex gap-2 w-fit overflow-x-hidden scroll whitespace-nowrap scroll-smooth"
+        className="flex gap-2 w-full overflow-x-hidden scroll scroll-smooth"
       >
         {eventsData.map((data) => (
           <EventsCard

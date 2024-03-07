@@ -1,11 +1,28 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Carousel from "./Carousel";
 import { IoIosInformationCircle } from "react-icons/io";
 import EventsCard from "@/utils/EventsCard";
 import EventCarousel from "@/utils/EventCarousel";
 import { eventsData } from "@/utils/EventsData";
 const Sentiment = () => {
+
+  const [trendingCryptoData, setTrendingCryptoData] = useState([]);
+
+  useEffect(() => {
+    const fetchTrendingCryptoData = async () => {
+      try {
+        const response = await axios.get('https://api.coingecko.com/api/v3/search/trending');
+        setTrendingCryptoData(response.data.coins || []);
+      } catch (error) {
+        console.error('Error fetching trending crypto data:', error);
+      }
+    };
+    fetchTrendingCryptoData();
+  }, []); 
   return (
-    <div className="card mt-3">
+    <div className="card mt-3 w-full">
       <h1 className="heading_text">Sentiment</h1>
       <h2 className="sub_heading_text">
         <span>Key Events</span>{" "}
@@ -23,7 +40,7 @@ const Sentiment = () => {
           />
         ))}
       </div>
-      {/* <EventCarousel eventsData={eventsData} /> */}
+      
       <h2 className="sub_heading_text">
         <span>Analyst Estimates</span>{" "}
         <span className="text-[#ABB9BF]">
