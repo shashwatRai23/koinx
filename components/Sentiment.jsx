@@ -1,6 +1,8 @@
 import React from "react";
 import { IoIosInformationCircle } from "react-icons/io";
 import EventsCard from "@/utils/EventsCard";
+import EventCarousel from "@/utils/EventCarousel";
+import { eventsData } from "@/utils/EventsData";
 const Sentiment = () => {
   return (
     <div className="card mt-3">
@@ -12,8 +14,15 @@ const Sentiment = () => {
         </span>
       </h2>
       <div className="flex flex-col sm:flex-row gap-4 mt-2">
-        <EventsCard/>
-        <EventsCard/>
+      {eventsData.map((event) => (
+          <EventsCard
+            key={event.id}
+            title={event.title}
+            content={event.content}
+            imgsrc={event.img}
+          />
+        ))}
+        {/* <EventCarousel eventsData={eventsData} /> */}
       </div>
       <h2 className="sub_heading_text mt-4">
         <span>Analyst Estimates</span>{" "}

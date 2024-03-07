@@ -7,6 +7,7 @@ import Coin from "@/components/Coin";
 import Performance from "@/components/Performance";
 import Sentiment from "@/components/Sentiment";
 import About from "@/components/About";
+import SubNav from "@/components/SubNav";
 
 const Bitcoin = () => {
   return (
@@ -14,6 +15,7 @@ const Bitcoin = () => {
       <section className="flex flex-col sm:flex-row gap-4">
         <div className="basis-3/4">
           <Coin />
+          <SubNav/>
           <Performance/>
           <Sentiment/>
           <About/>
