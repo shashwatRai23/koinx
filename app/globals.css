@@ -2,25 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background: #EFF2F5;
+body {
+  background: #eff2f5;
 }
 
-.getStarted{
-  background: linear-gradient(81.62deg, #2870EA 8.72%, #1B4AEF 85.01%);
+.getStarted {
+  background: linear-gradient(81.62deg, #2870ea 8.72%, #1b4aef 85.01%);
   border-radius: 8px;
   color: white;
   padding: 8px 10px;
 }
 
-.card{
-  @apply bg-[#ffffff] px-4 pt-6 pb-[4em] rounded-lg
+.mobileNav{
+  display: none;
 }
 
-.heading_text{
-  @apply text-xl font-bold
+@media screen and (max-width: 768px) {
+  .nav{
+    display: none;
+  }
+  .mobileNav{
+    display: block;
+  }
 }
 
-.sub_heading_text{
-  @apply mt-2 text-lg font-bold flex items-center gap-2 text-[#44475B]
+.bar {
+  background: linear-gradient(
+    90deg,
+    #ff4949 0%,
+    #ff4e11 15.34%,
+    #fc870a 30.45%,
+    #ffaf11 48.68%,
+    #c2cb21 62.75%,
+    #11eb68 100.03%
+  );
+}
+
+.card {
+  @apply bg-[#ffffff] px-4 pt-6 pb-[4em] rounded-lg;
+}
+
+.heading_text {
+  @apply text-xl font-bold;
+}
+
+.sub_heading_text {
+  @apply mt-2 text-lg font-bold flex items-center gap-2 text-[#44475B];
 }
