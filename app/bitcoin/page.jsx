@@ -4,6 +4,8 @@ import Team from "@/components/Team";
 import Trending from "@/components/Trending";
 import Tokenomics from "@/components/Tokenomics";
 import Coin from "@/components/Coin";
+import Performance from "@/components/Performance";
+import Sentiment from "@/components/Sentiment";
 
 const Bitcoin = () => {
   return (
@@ -11,6 +13,8 @@ const Bitcoin = () => {
       <section className="flex gap-4">
         <div className="basis-3/4">
           <Coin />
+          <Performance/>
+          <Sentiment/>
           <Tokenomics />
           <Team />
         </div>

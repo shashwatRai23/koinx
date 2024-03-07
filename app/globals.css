@@ -20,3 +20,7 @@ body{
 .heading_text{
   @apply text-xl font-bold
 }
+
+.sub_heading_text{
+  @apply mt-2 text-lg font-bold flex items-center gap-2 text-[#44475B]
+}
